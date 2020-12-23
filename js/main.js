@@ -15,7 +15,7 @@ const amountWins = document.querySelectorAll('[data-wins]');
 
 amountWins.forEach(function(el) {
     let amount = el.dataset.wins;
-    let amountPlayed = 10;
+    let amountPlayed = 13;
     let amountPerRound = 10;
     let amountPerRoundWin = amountPerRound * 5;
     const balance = (amountPerRound * amountPlayed) - (amount * amountPerRoundWin)
