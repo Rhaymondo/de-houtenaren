@@ -20,7 +20,7 @@ word.splice(-2,2)
 var regex = /(<([^>]+)>)/ig;
 for(var i=0;i<word.length;i++){
   word[i] = word[i].replace(regex, "");
-  }
+}
 
 var i,j,temparray,chunk = 39;
 for (i=0,j=word.length; i<j; i+=chunk) {
