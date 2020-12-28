@@ -30,7 +30,7 @@ for (i=0,j=word.length; i<j; i+=chunk) {
 
 amountWins.forEach(function(el) {
     let amount = el.dataset.wins;
-    let amountPlayed = 13;
+    let amountPlayed = 14;
     let amountPerRound = 10;
     let amountPerRoundWin = amountPerRound * 5;
     const balance = (amountPerRound * amountPlayed) - (amount * amountPerRoundWin)
