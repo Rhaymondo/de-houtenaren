@@ -423,3 +423,9 @@ tr.is-winner td:nth-child(odd) {
   font-size: 1rem;
   padding: 1rem;
 }
+
+#my-canvas {
+  position: absolute;
+  background-color: transparent;
+  z-index: 99;
+}
