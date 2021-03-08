@@ -1,6 +1,3 @@
-// At the component you want to use confetti
-import ConfettiGenerator from "confetti-js";
-
 tippy('.winning-score', {
     content: 'Gefeliciteerd goed gedaan!! 🎉',
     animation: 'scale',
@@ -31,14 +28,9 @@ for (i=0,j=word.length; i<j; i+=chunk) {
     console.log(temparray);
 }
 
-var confettiElement = document.getElementById('my-canvas');
-var confettiSettings = {"target":confettiElement,"max":"60","size":"1","animate":true,"props":["circle","square","triangle","line",{"type":"svg","src":"./img/football.svg","size":25,"weight":0.2}],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"30","rotate":true,"width":"1232","height":"796","start_from_edge":true,"respawn":true};
-var confetti = new ConfettiGenerator(confettiSettings);
-confetti.render();
-
 amountWins.forEach(function(el) {
     let amount = el.dataset.wins;
-    let amountPlayed = 16;
+    let amountPlayed = 25;
     let amountPerRound = 10;
     let amountPerRoundWin = amountPerRound * 5;
     const balance = (amountPerRound * amountPlayed) - (amount * amountPerRoundWin)
