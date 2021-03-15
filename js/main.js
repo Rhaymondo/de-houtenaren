@@ -22,6 +22,10 @@ for(var i=0;i<word.length;i++){
   word[i] = word[i].replace(regex, "");
 }
 
+document.querySelector('.congrats').addEventListener('click', function() {
+    document.querySelector('.koning-toto').classList.add('is-visible');
+});
+
 var i,j,temparray,chunk = 39;
 for (i=0,j=word.length; i<j; i+=chunk) {
     temparray = word.slice(i,i+chunk);
@@ -30,7 +34,7 @@ for (i=0,j=word.length; i<j; i+=chunk) {
 
 amountWins.forEach(function(el) {
     let amount = el.dataset.wins;
-    let amountPlayed = 25;
+    let amountPlayed = 26;
     let amountPerRound = 10;
     let amountPerRoundWin = amountPerRound * 5;
     const balance = (amountPerRound * amountPlayed) - (amount * amountPerRoundWin)
