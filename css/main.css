@@ -446,7 +446,6 @@ tr.is-winner td:nth-child(odd) {
     top: 0;
     left: 0;
     background: rgba(0,0,0, .6);
-    max-height: 100vh;
     overflow-y: scroll;
     padding: 4rem 0;
     opacity: 0;
