@@ -4,13 +4,6 @@ tippy('.winning-score', {
     theme: 'light'
   });
 
-  tippy('.go-team', {
-    content: 'Klik om team te bekijken ',
-    animation: 'scale',
-    placement: 'left-end',
-    theme: 'light'
-  });
-
 const amountWins = document.querySelectorAll('[data-wins]');
 
 
